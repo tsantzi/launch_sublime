@@ -1,29 +1,16 @@
-# Foobar
+# Sublime Text Launcher
 
-Foobar is a Python library for dealing with word pluralization.
+A simple bash script that ensures a new instance of Sublime Text 3 is launched per workspace.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Needs `wmctrl` to work. Also, Sublime Text 3 :)
 
-```bash
-pip install foobar
-```
+Copy the script anywhere that's in your PATH.
 
-## Usage
+Add a new launcher for the script in `~/.local/share/applications` (one is provided in `Launcher/.local/share/applications`).
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Use this new launcher instead of the default Sublime Text launcher to open your text files
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

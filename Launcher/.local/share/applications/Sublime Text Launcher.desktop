@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Sublime Text Launcher
+Comment=Sublime Text Launcher
+Type=Application
+Exec=launch_sublime.sh %F
+Icon=/usr/share/icons/hicolor/48x48/apps/sublime-text.png

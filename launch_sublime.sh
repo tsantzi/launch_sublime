@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# Constats
+# Constants
 readonly TITLE="subl.Subl"
 
 

@@ -2,7 +2,8 @@
 
 
 # Constants
-readonly TITLE="subl.Subl"
+readonly TITLE1="sublime_text.Sublime_text"
+readonly TITLE2="subl.Subl"
 
 
 # Returns the current desktop's index
@@ -14,7 +15,7 @@ function get_current_desktop() {
 
 # Returns the window ID of the current sublime instance (if any)
 function get_current_instance() {
-	current_instance=$({ wmctrl -lx | grep " $current_desktop $TITLE"; } | cut -f1 -d " ")
+	current_instance=$({ wmctrl -lx | grep -e " $current_desktop $TITLE1" -e " $current_desktop $TITLE2"; } | cut -f1 -d " ")
 	# echo "current_instance = $current_instance" >> /tmp/temp.log
 }
 

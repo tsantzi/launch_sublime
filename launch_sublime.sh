@@ -2,8 +2,9 @@
 
 
 # Constants
+readonly CMD="subl3"
 readonly TITLE1="sublime_text.Sublime_text"
-readonly TITLE2="subl.Subl"
+readonly TITLE2="subl3.Subl"
 
 
 # Returns the current desktop's index
@@ -38,7 +39,7 @@ then
 	# echo "starting new instance..." >> /tmp/temp.log
 
 	# Start new sublime instance
-	eval "subl -n"
+	eval "$CMD -n"
 
 	# Wait for window to appear
 	# Also, timeout after a while to make sure we don't get stuck here on failure etc
@@ -62,4 +63,4 @@ fi
 wmctrl -i -a $current_instance
 
 # Load up files
-eval "subl -a $file_list"
+eval "$CMD -a $file_list"
